@@ -38,7 +38,7 @@ button{
 button:hover{
     background: #7c7c7c6b;
 }
-.barra-de-busqueda{
+input.barra-de-busqueda {
     border: none;
     outline: none;
     padding: 0.5em 1em;
@@ -52,4 +52,25 @@ button:hover{
 h1.temperatura{
     margin: 0;
 
+}
+.flex {
+    display: flex;
+    align-items: center;
+}
+.descripcion {
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+}
+.weather.loading:after {
+    visibility: visible;
+    content: "Cargando...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
 }
